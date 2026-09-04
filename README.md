@@ -32,7 +32,7 @@ Slide decks for each part are in [`/presentations`](./presentations).
 - [x] Invoking a model via console and boto3/CLI
 - [x] Prompting techniques playground (zero-shot, one-shot, few-shot, chain-of-thought)
 
-### Week 2
+
 - [x] Vector stores, RAG & prompt governance
 - [x] Agentic AI & tool integration (Bedrock AgentCore, Strands Agents, MCP)
 - [x] Model deployment & enterprise integration
@@ -42,7 +42,7 @@ Slide decks for each part are in [`/presentations`](./presentations).
 - [x] Bedrock Agent with a Lambda-backed action group
 - [x] Free AWS workshop: agent + knowledge base + RAG
 
-### Week 3
+
 - [x] AI safety, security & responsible AI (Guardrails)
 - [x] Cost, performance & monitoring
 - [x] Evaluation & troubleshooting
