@@ -1,9 +1,8 @@
-# Part 3 of 3 — Safety, Cost & Evaluation
+Part 3— Safety, Cost & Evaluation
 
 🔗 Video: https://youtu.be/dJ5CI_DAXu4?si=9hNpPiPwwdFtpp4E
-🎞️ Slides: [`AIP-C01_Part3_of_3.pptx`](../presentations/AIP-C01_Part3_of_3.pptx)
 
-## Topics Covered
+Topics Covered
 
 1. AI Safety, Security & Responsible AI
 - Guardrails flow: `user input → guardrail (input check) → foundation model → guardrail (output check) → safe response`
@@ -18,18 +17,18 @@
 - Semantic caching to avoid paying for near-identical repeated calls
 - CloudWatch: token usage, latency, response quality tracking + anomaly detection
 
-### 3. Evaluation & Troubleshooting
+3. Evaluation & Troubleshooting
 - Evaluation beyond accuracy: relevance, factual accuracy, consistency, fluency
 - LLM-as-a-judge: using a foundation model to score another model's outputs at scale
 - RAG evaluation: retrieval relevance and generation quality assessed separately
 - Common failure points: context window overflow, prompt confusion, embedding/retrieval drift
 
-## Labs Completed
+Labs Completed
 - [x] Added Guardrails (input/output filtering, denied topics) to the Week 2 agent
 - [x] CloudWatch monitoring pass: token usage & invocation logs
 - [x] AWS "Agentic AI Demonstrated" microcredential (free, hands-on)
 
-## Key Takeaways
+Key Takeaways
 > Safety and governance aren't an add-on step — they're built into the request/response flow itself.
 
 > The most capable model isn't always the right choice — cost-aware design is a tested skill here.
