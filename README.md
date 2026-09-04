@@ -60,13 +60,10 @@ See detailed notes per part in [`/notes`](./notes).
 aip-c01-genai-study/
 ├── README.md                # this file — overview & progress tracker
 ├── notes/                   # topic-by-topic study notes, one file per video part
-│   ├── part-1-exam-overview-bedrock.md
-│   ├── part-2-retrieval-agents-deployment.md
-│   └── part-3-safety-cost-evaluation.md
-└── presentations/           # slide decks used to record the YouTube series
-    ├── AIP-C01_Part1_of_3.pptx
-    ├── AIP-C01_Part2_of_3.pptx
-    └── AIP-C01_Part3_of_3.pptx
+  ├── part-1-exam-overview-bedrock.md
+  ├── part-2-retrieval-agents-deployment.md
+  └── part-3-safety-cost-evaluation.md
+
 ```
 
 ## 🛠️ Key AWS Services Covered
