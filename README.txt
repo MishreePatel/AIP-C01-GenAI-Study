@@ -15,9 +15,9 @@ I'm documenting this journey publicly so it can:
 
 | Part | Topics | Video |
 |------|--------|-------|
-| Part 1 of 3 | Exam overview, Amazon Bedrock fundamentals, FM integration & data pipelines | 🔗 https://youtu.be/A2ofxaqvNFs?si=9Xk5jdvQeqiW508O |
-| Part 2 of 3 | Vector stores & RAG, agentic AI & tool integration, model deployment & enterprise integration | 🔗 https://youtu.be/DqHoQXvx6AU?si=rBgRF307pas8oOgZ |
-| Part 3 of 3 | AI safety & security, cost & performance monitoring, evaluation & troubleshooting | 🔗 https://youtu.be/dJ5CI_DAXu4?si=2T3ymoo1NNZOY6Zu |
+| Part 1 | Exam overview, Amazon Bedrock fundamentals, FM integration & data pipelines | 🔗 https://youtu.be/A2ofxaqvNFs?si=9Xk5jdvQeqiW508O |
+| Part 2 | Vector stores & RAG, agentic AI & tool integration, model deployment & enterprise integration | 🔗 https://youtu.be/DqHoQXvx6AU?si=rBgRF307pas8oOgZ |
+| Part 3 | AI safety & security, cost & performance monitoring, evaluation & troubleshooting | 🔗 https://youtu.be/dJ5CI_DAXu4?si=2T3ymoo1NNZOY6Zu |
 
 Slide decks for each part are in [`/presentations`](./presentations).
 
