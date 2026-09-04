@@ -1,7 +1,6 @@
-Part 1 of 3 — Exam Overview & Amazon Bedrock Fundamentals
+Part 1  — Exam Overview & Amazon Bedrock Fundamentals
 
 🔗 Video: https://youtu.be/A2ofxaqvNFs?si=IgYmwJZdYNuXeN-Q
-🎞️ Slides: [`AIP-C01_Part1_of_3.pptx`](../presentations/AIP-C01_Part1_of_3.pptx)
 
 Topics Covered
 
