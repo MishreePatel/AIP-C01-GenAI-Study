@@ -3,6 +3,10 @@
 Public study log and video series notes for my prep towards the **AWS Certified Generative AI Developer – Professional (AIP-C01)** certification.
 
 This repo tracks the topics I studied, the hands-on labs I completed, and the companion YouTube video series I'm recording as I go.
+   ## 🔗 Connect
+
+   - 💼 LinkedIn: [Post about this series](https://lnkd.in/p/g4aWYGiN)
+   - 📺 Latest video: [The 5 Core Domains, Explained](https://youtu.be/GiK27gLML7Y)
 
 ## 🎯 Why this repo
 
@@ -18,6 +22,7 @@ I'm documenting this journey publicly so it can:
 | Part 1 | Exam overview, Amazon Bedrock fundamentals, FM integration & data pipelines | 🔗 https://youtu.be/A2ofxaqvNFs?si=9Xk5jdvQeqiW508O |
 | Part 2 | Vector stores & RAG, agentic AI & tool integration, model deployment & enterprise integration | 🔗 https://youtu.be/DqHoQXvx6AU?si=rBgRF307pas8oOgZ |
 | Part 3 | AI safety & security, cost & performance monitoring, evaluation & troubleshooting | 🔗 https://youtu.be/dJ5CI_DAXu4?si=2T3ymoo1NNZOY6Zu |
+| Wrap-up | The 5 Core Domains, explained simply | 🔗 https://youtu.be/GiK27gLML7Y |
 
 Slide decks for each part are in [`/presentations`](./presentations).
 
