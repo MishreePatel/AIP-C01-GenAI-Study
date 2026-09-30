@@ -1,0 +1,55 @@
+{
+  "_comment": "Reference configuration for an Amazon Bedrock Guardrail. This is the shape of request you'd pass to bedrock.create_guardrail(). It filters both what goes IN to the model and what comes OUT.",
+
+  "name": "aip-c01-content-safety-guardrail",
+  "description": "Blocks unsafe topics, filters PII, and enforces word filters on both prompts and model responses.",
+
+  "topicPolicyConfig": {
+    "_comment": "Denied topics — the model will refuse to engage with these regardless of how the question is phrased.",
+    "topicsConfig": [
+      {
+        "name": "MedicalAdvice",
+        "definition": "Requests for specific medical diagnosis, treatment, or dosage recommendations.",
+        "examples": [
+          "What dose of ibuprofen should I take?",
+          "Do I have an infection based on these symptoms?"
+        ],
+        "type": "DENY"
+      }
+    ]
+  },
+
+  "contentPolicyConfig": {
+    "_comment": "Filters harmful content categories at graduated strength levels, checked on both input and output.",
+    "filtersConfig": [
+      { "type": "HATE", "inputStrength": "HIGH", "outputStrength": "HIGH" },
+      { "type": "VIOLENCE", "inputStrength": "HIGH", "outputStrength": "HIGH" },
+      { "type": "INSULTS", "inputStrength": "MEDIUM", "outputStrength": "MEDIUM" },
+      { "type": "MISCONDUCT", "inputStrength": "HIGH", "outputStrength": "HIGH" },
+      { "type": "PROMPT_ATTACK", "inputStrength": "HIGH", "outputStrength": "NONE" }
+    ]
+  },
+
+  "sensitiveInformationPolicyConfig": {
+    "_comment": "Detects and masks PII in both directions — this is what protects users if a model tries to echo back sensitive data it was given or hallucinates a fake one.",
+    "piiEntitiesConfig": [
+      { "type": "EMAIL", "action": "ANONYMIZE" },
+      { "type": "PHONE", "action": "ANONYMIZE" },
+      { "type": "US_SOCIAL_SECURITY_NUMBER", "action": "BLOCK" },
+      { "type": "CREDIT_DEBIT_CARD_NUMBER", "action": "BLOCK" }
+    ]
+  },
+
+  "wordPolicyConfig": {
+    "_comment": "Simple exact-match word/phrase blocking — a blunt but fast first line of defense.",
+    "wordsConfig": [
+      { "text": "competitor-product-name" }
+    ],
+    "managedWordListsConfig": [
+      { "type": "PROFANITY" }
+    ]
+  },
+
+  "blockedInputMessaging": "I can't help with that request.",
+  "blockedOutputsMessaging": "I'm not able to share that information."
+}
