@@ -28,6 +28,20 @@ Slide decks for each part are in [`/presentations`](./presentations).
 
 ## 📚 Study Progress
 
+## 🧪 Technical Artifacts
+
+Reference implementations demonstrating hands-on understanding of core AWS GenAI services, one per major domain. These are written to show how each piece works under the hood rather than only using the fully-managed version of each service.
+
+| Artifact | Domain | What it shows |
+|---|---|---|
+| [`1_bedrock_invoke.py`](technical-artifacts/1_bedrock_invoke.py) | Foundation Models | Calling a Bedrock model via the Converse API |
+| [`2_rag_pipeline.py`](technical-artifacts/2_rag_pipeline.py) | Foundation Models & RAG | RAG built from scratch — chunking, embedding, vector search, retrieval-augmented generation |
+| [`3_guardrails_config.json`](technical-artifacts/3_guardrails_config.json) | AI Safety & Governance | A Bedrock Guardrails configuration — denied topics, content filters, PII handling, word blocklist |
+| [`4_bedrock_agent_definition.py`](technical-artifacts/4_bedrock_agent_definition.py) | Implementation & Integration | A Bedrock Agent with an action group backed by a real Lambda function |
+| [`5_cost_monitoring.py`](technical-artifacts/5_cost_monitoring.py) | Cost & Performance | CloudWatch token-usage metrics and a prompt cache to reduce redundant model calls |
+
+See [`TROUBLESHOOTING.md`](technical-artifacts/TROUBLESHOOTING.md) for real issues encountered while building these and how they were resolved.
+
 ### Week 1
 - [x] Amazon Bedrock fundamentals (model access, configuration, invocation via console/API/SDK)
 - [x] Domain 1 foundations — FM integration architecture & data validation pipelines
@@ -68,6 +82,7 @@ aip-c01-genai-study/
   ├── part-1-exam-overview-bedrock.md
   ├── part-2-retrieval-agents-deployment.md
   └── part-3-safety-cost-evaluation.md
+├── technical-artifacts/   # Reference code & configs for core AWS GenAI services
 
 ```
 
